@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5df652994f176c41bfc55c410578e40, type: 3}
+  m_Name: SkyRoadSettings
+  m_EditorClassIdentifier: 
+  asteroid:
+    enabled: 1
+    positionOffset: {x: 0, y: 1.5, z: 0}
+    positionSpread: 5
+    probability: 0.85
+    rotationSpeed: 60
+    size: 0.5
+    skipEvery: 4
+  gameController:
+    scorePerObstacle: 5
+    perObstacleMultiplier: 1
+    scorePerSecond: 1
+    perSecondMultiplier: 2
+    speedIncrementRate: 10
+    speedIncrementTimeSeconds: 30
+    maxSpeed: 100
+  gameInstaller:
+    asteroidPrefab: {fileID: 1065796747198288135, guid: 350006bde8fd85c4a8f16bb0161db18e,
+      type: 3}
+    asteroidPoolCount: 20
+    explosionPrefab: {fileID: 100002, guid: e92f2ac22264cf14a89ba9ccfd918bad, type: 3}
+    explosionPoolCount: 1
+    floorPrefab: {fileID: 6808630485134987289, guid: 6fa3fd3ef7b59364f8c1e8823f8f5111,
+      type: 3}
+    floorPoolCount: 20
+  road:
+    floorCount: 20
+    floorSize: 9
+    roadBoostedSpeedMulti: 2
+    roadCycleBound: -10
+    roadNormalSpeed: 40
+    roadOffset: {x: 0, y: -1.5, z: 0}
+  ship:
+    stateDead:
+      explosionScale: 2
+    stateMoving:
+      moveSpeed: 0.3
+      shipBounds: 4
+      tiltAngle: 45
+      tiltSpeed: 0.2
+    stateStarting:
+      startAmplitude: 0.1
+      startFrequency: 4
+      startPosition: {x: 0, y: 0, z: 0}
+  skyRoadCamera:
+    normalCameraSettings:
+      distance: 5
+      height: 2
+      damping: 10
+    boostedCameraSettings:
+      distance: 2.5
+      height: 1
+      damping: 10
+    cameraFollowSpeed: 0.4
+    cameraShakeTime: 0
